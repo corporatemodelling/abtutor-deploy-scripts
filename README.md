@@ -4,7 +4,7 @@ Follow these steps in order to install the ABtutor solution.
 
 ## Clone this repo
 
-First of all, make a clone of this repo, and keep your own **private** copy with your own customized files.
+First of all, make a fork of this repo, and keep your own **private** copy with your own customized files.
 
 ## Installing a pre-release
 
