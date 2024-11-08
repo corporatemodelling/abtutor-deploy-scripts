@@ -10,7 +10,7 @@ First of all, make a clone of this repo, and keep your own **private** copy with
 
 If you are installing a pre-release version (i.e. if any of the versions mentioned in `versions.sh` are `latest`, or are suffixed with `-alpha.*` or `-rc.*`), you will need to perform a couple of additional steps.
 
-### Service account
+### Service account pull secrets
 
 Customize your Kubernetes service account with `imagePullSecrets` that allow you to pull from the Corporate Modelling Services internal registry, located at `cr.corporatemodelling.com`.
 
