@@ -6,6 +6,8 @@ Follow these steps in order to install the ABtutor solution.
 
 First of all, make a fork of this repo, and keep your own **private** copy with your own customized files.
 
+When components are upgraded, or additional steps are added to the scripts, you can simply pull the changes from here into your own fork.
+
 ## Installing a pre-release
 
 If you are installing a pre-release version (i.e. if any of the versions mentioned in `versions.sh` are `latest`, or are suffixed with `-alpha.*` or `-rc.*`), you will need to perform a couple of additional steps.
