@@ -69,23 +69,30 @@ If your cluster already has a CockroachDB database that you want to use, you sho
 
 Otherwise, run `0-database.sh` to install an empty CockroachDB database cluster.
 
-## Database schema
+## Database initialization
 
-The database will need to be initialized with the schema.
+Either install a clean schema, or restore an existing database backup.
 
-However, if you intend to restore a backup of a database to work with, the backup will already contain the schema.
+### Schema installation
 
-Otherwise, run `0-schema.sh` to install the database schema.
+Simply run `0-schema.sh` to install the database schema.
 
-> If you _do_ restore a backup of an existing database, you will probably need to `GRANT` the admin user (`abtadmin` by default)
-> permissions on the `abtutor` database and `abtutor` & `dbo` schemas, e.g.
-> ```sql
-> GRANT ALL ON DATABASE abtutor TO abtadmin;
-> GRANT ALL ON SCHEMA abtutor TO abtadmin;
-> GRANT ALL ON ALL TABLES IN SCHEMA abtutor TO abtadmin;
-> GRANT ALL ON SCHEMA dbo TO abtadmin;
-> GRANT ALL ON ALL TABLES IN SCHEMA dbo TO abtadmin;
-> ```
+### Restoring a backup
+
+If you intend to restore a backup of a database to work with, the backup will already contain the schema, so there
+is **no need** to run the `0-schema.sh` script.
+
+After you have restored your backup of an existing database, you will probably need to `GRANT` the admin user (`abtadmin` by default) permissions on that database, plus the `abtutor` and `dbo` schemas.
+
+e.g. if the database is called `abtutor`:
+
+```sql
+GRANT ALL ON DATABASE abtutor TO abtadmin;
+GRANT ALL ON SCHEMA abtutor TO abtadmin;
+GRANT ALL ON ALL TABLES IN SCHEMA abtutor TO abtadmin;
+GRANT ALL ON SCHEMA dbo TO abtadmin;
+GRANT ALL ON ALL TABLES IN SCHEMA dbo TO abtadmin;
+```
 
 ## Installing the ABtutor solution
 
