@@ -77,6 +77,16 @@ However, if you intend to restore a backup of a database to work with, the backu
 
 Otherwise, run `0-schema.sh` to install the database schema.
 
+> If you _do_ restore a backup of an existing database, you will probably need to `GRANT` the admin user (`abtadmin` by default)
+> permissions on the `abtutor` database and `abtutor` & `dbo` schemas, e.g.
+> ```sql
+> GRANT ALL ON DATABASE abtutor TO abtadmin;
+> GRANT ALL ON SCHEMA abtutor TO abtadmin;
+> GRANT ALL ON ALL TABLES IN SCHEMA abtutor TO abtadmin;
+> GRANT ALL ON SCHEMA dbo TO abtadmin;
+> GRANT ALL ON ALL TABLES IN SCHEMA dbo TO abtadmin;
+> ```
+
 ## Installing the ABtutor solution
 
 Run `1-install.sh` to install the Keycloak IDP, the customized WebWFTL, the various webservices, and the network configurations.
