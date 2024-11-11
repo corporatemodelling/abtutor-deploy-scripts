@@ -5,6 +5,7 @@ COCKROACHDB_VERSION=24.1.6
 # Name of CockroachDB database (to use or create)
 COCKROACHDB_DATABASE_NAME=abtutor
 # Name of CockroachDB schema (to use or create)
+# Disclaimer: at the moment, this should NOT be modified. Value MUST be "abtutor".
 COCKROACHDB_SCHEMA_NAME=abtutor
 # Name of database admin user (to use or create)
 COCKROACHDB_ADMIN_USER=abtadmin
