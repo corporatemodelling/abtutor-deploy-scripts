@@ -1,5 +1,7 @@
 source ./__k8s.sh
 
+# Version of CockroachDB to install
+COCKROACHDB_VERSION=24.1.6
 # Name of CockroachDB database (to use or create)
 COCKROACHDB_DATABASE_NAME=abtutor
 # Name of CockroachDB schema (to use or create)
