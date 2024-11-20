@@ -4,7 +4,6 @@
 source ./__hosts.sh
 source ./__k8s.sh
 source ./__cockroach.sh
-source ./__secrets.sh
 source ./__email.sh
 
 # These ones, not so much.
