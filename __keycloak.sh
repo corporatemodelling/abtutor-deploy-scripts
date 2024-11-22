@@ -30,15 +30,16 @@ KEYCLOAK_POSTGRES_ADMIN_PASSWORD=CreateAPassword3!
 # If the *_SECRET_NAME value is defined, the explicit values above are not used.
 # The Keycloak chart does not allow a different namespace to be defined.
 # You can define what key the secret is defined in (the default for
-# KEYCLOAK_ADMIN_PASSWORD_SECRET_KEY is "admin-password", and the default for
-# KEYCLOAK_POSTGRES_PASSWORD_SECRET_KEY is "password").
+# KEYCLOAK_POSTGRES_PASSWORD_SECRET_KEY is "password", and the default for
+# KEYCLOAK_ADMIN_PASSWORD_SECRET_KEY is "admin-password").
 # NOTE: you cannot define a separate secret or key for the Postgres admin user password.
 # If KEYCLOAK_POSTGRES_PASSWORD_SECRET_NAME is defined, it will be used as the secret,
 # but the Postgres admin user password MUST be defined in a key called "postgres-password"
 KEYCLOAK_ADMIN_PASSWORD_SECRET_NAME=""
-KEYCLOAK_ADMIN_PASSWORD_SECRET_KEY=""
 KEYCLOAK_POSTGRES_PASSWORD_SECRET_NAME=""
-KEYCLOAK_POSTGRES_PASSWORD_SECRET_KEY=""
+# Do not set these to blank values.
+KEYCLOAK_ADMIN_PASSWORD_SECRET_KEY="admin-password"
+KEYCLOAK_POSTGRES_PASSWORD_SECRET_KEY="password"
 
 # reCAPTCHA secrets. Obtain these from Google if required.
 # If you don't define a site key, reCAPTCHA will not be enabled.

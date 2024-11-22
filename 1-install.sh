@@ -29,8 +29,8 @@ $KEYCLOAK_RELEASE_NAME \
 --set keycloak.auth.passwordSecretKey="$KEYCLOAK_ADMIN_PASSWORD_SECRET_KEY" \
 --set keycloak.postgresql.auth.password="$KEYCLOAK_POSTGRES_PASSWORD" \
 --set keycloak.postgresql.auth.postgresPassword="$KEYCLOAK_POSTGRES_ADMIN_PASSWORD" \
---set keycloak.postgresql.auth.existingSecret="$KEYCLOAK_POSTGRES_ADMIN_PASSWORD_SECRET_NAME" \
---set keycloak.postgresql.auth.secretKeys.userPasswordKey="$KEYCLOAK_POSTGRES_ADMIN_PASSWORD_SECRET_KEY" \
+--set keycloak.postgresql.auth.existingSecret="$KEYCLOAK_POSTGRES_PASSWORD_SECRET_NAME" \
+--set keycloak.postgresql.auth.secretKeys.userPasswordKey="$KEYCLOAK_POSTGRES_PASSWORD_SECRET_KEY" \
 --set client.oidc.secret="$KEYCLOAK_OIDC_CLIENT_SECRET" \
 --set client.oidc.existingSecret.name="$KEYCLOAK_OIDC_CLIENT_SECRET_NAME" \
 --set client.oidc.existingSecret.namespace="$KEYCLOAK_OIDC_CLIENT_SECRET_NAMESPACE" \
