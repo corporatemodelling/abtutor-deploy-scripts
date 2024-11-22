@@ -12,6 +12,13 @@ EMAIL_SMTP_PORT=1025
 EMAIL_SMTP_AUTH=false
 EMAIL_SMTP_USER=username
 EMAIL_SMTP_PASSWORD=password
+# Alternatively, describe an existing secret where the password values can be found.
+# If the *_SECRET_NAME value is defined, the explicit value above is not used.
+# You can define what namespace it is in (if blank, ABTUTOR_K8S_NAMESPACE will be used)
+# You can define what key the secret is defined in (if blank, "secret" will be used)
+EMAIL_SMTP_PASSWORD_SECRET_NAME=""
+EMAIL_SMTP_PASSWORD_SECRET_NAMESPACE=""
+EMAIL_SMTP_PASSWORD_SECRET_KEY=""
 
 # Address and display name to use in emails that are sent by Keycloak
 # (the From email address does not have to actually exist).
