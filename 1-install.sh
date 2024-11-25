@@ -108,6 +108,8 @@ abtutor-webwftl \
 --set api.accounts.image.tag=$API_ACCOUNTS_TAG \
 --set api.xero.image.tag=$API_XERO_TAG \
 --set api.signup.image.tag=$API_SIGNUP_TAG \
+--set api.batchinvoice.image.tag=$API_BATCHINVOICE_TAG \
+--set api.payment.image.tag=$API_PAYMENT_TAG \
 --set contentcreation.api.image.tag=$CONTENT_CREATION_API_TAG \
 --set contentcreation.jsonmerge.image.tag=$CONTENT_CREATION_JSON_MERGE_TAG \
 --set emails.templateservice.image.tag=$EMAIL_TEMPLATE_SERVICE_TAG \
