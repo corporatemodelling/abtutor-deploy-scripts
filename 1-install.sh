@@ -108,8 +108,17 @@ abtutor-webwftl \
 --set api.accounts.image.tag=$API_ACCOUNTS_TAG \
 --set api.xero.image.tag=$API_XERO_TAG \
 --set api.signup.image.tag=$API_SIGNUP_TAG \
+--set api.adduser.image.tag=$API_ADDUSER_TAG \
 --set api.batchinvoice.image.tag=$API_BATCHINVOICE_TAG \
 --set api.payment.image.tag=$API_PAYMENT_TAG \
+--set api.renewalinitiator.image.tag=$API_RENEWALINITIATOR_TAG \
+--set api.renewalorder.image.tag=$API_RENEWALORDER_TAG \
+--set api.renewalsendreminder.image.tag=$API_RENEWALSENDREMINDER_TAG \
+--set api.renewalconverttoinvoice.image.tag=$API_RENEWALCONVERTTOINVOICE_TAG \
+--set api.renewalaccount.image.tag=$API_RENEWALACCOUNT_TAG \
+--set api.renewalxerocheck.image.tag=$API_RENEWALXEROCHECK_TAG \
+--set api.renewallicence.image.tag=$API_RENEWALLICENCE_TAG \
+--set api.renewalsendinvoice.image.tag=$API_RENEWALSENDINVOICE_TAG \
 --set contentcreation.api.image.tag=$CONTENT_CREATION_API_TAG \
 --set contentcreation.jsonmerge.image.tag=$CONTENT_CREATION_JSON_MERGE_TAG \
 --set emails.templateservice.image.tag=$EMAIL_TEMPLATE_SERVICE_TAG \
