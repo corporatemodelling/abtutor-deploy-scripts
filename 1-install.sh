@@ -154,7 +154,7 @@ spec:
     - from:
         - namespaceSelector:
             matchLabels:
-              name: $CMS_WEBHOOKS_NAMESPACE
+              kubernetes.io/metadata.name: $CMS_WEBHOOKS_NAMESPACE
         - podSelector:
             matchLabels:
               app.kubernetes.io/name: auth-injector-oidc-service
