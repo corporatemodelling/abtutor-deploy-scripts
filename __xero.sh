@@ -2,6 +2,7 @@
 # !
 XERO_CLIENT_ID=your_xero_client_id_here
 XERO_CLIENT_SECRET=your_xero_client_secret_here
+XERO_TENANT_NAME=your_xero_tenant_name
 # Alternatively, describe existing secrets where the secret value can be found.
 # If the *_SECRET_NAME value is defined, the explicit value above is not used.
 # You can define what namespace it is in (if blank, ABTUTOR_K8S_NAMESPACE will be used)
