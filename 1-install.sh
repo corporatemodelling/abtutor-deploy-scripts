@@ -87,6 +87,7 @@ abtutor-webwftl \
 --set api.signup.keycloak.existingSecret.key=$KEYCLOAK_ADMIN_CLIENT_SECRET_KEY \
 --set api.xero.clientId=$XERO_CLIENT_ID \
 --set api.xero.clientSecret=$XERO_CLIENT_SECRET \
+--set api.xero.tenantName=$XERO_TENANT_NAME \
 --set api.xero.existingSecret.name=$XERO_CLIENT_SECRET_NAME \
 --set api.xero.existingSecret.namespace=$XERO_CLIENT_SECRET_NAMESPACE \
 --set api.xero.existingSecret.key=$XERO_CLIENT_SECRET_KEY \
