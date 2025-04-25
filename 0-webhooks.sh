@@ -29,6 +29,7 @@ auth-injector \
 --set serviceAccount.name=$ABTUTOR_K8S_SERVICE_ACCOUNT \
 --set auth.oidc.ingress.hosts."$ESCAPED_ABTUTOR_HOST"=not-used \
 --set auth.oidc.service.image.tag=$AUTH_INJECTOR_OIDC_SERVICE_TAG \
+--set auth.injectionWebhook.image.tag=$AUTH_INJECTION_WEBHOOK_TAG \
 --set auth.proxy.image.tag=$AUTH_INJECTOR_AUTH_PROXY_TAG \
 --set registry.cmsPublicRegistry=$CMS_PUBLIC_REGISTRY \
 --version $AUTH_INJECTOR_HELM_VERSION \
