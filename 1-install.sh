@@ -124,6 +124,9 @@ abtutor-webwftl \
 --set contentcreation.jsonmerge.image.tag=$CONTENT_CREATION_JSON_MERGE_TAG \
 --set emails.templateservice.image.tag=$EMAIL_TEMPLATE_SERVICE_TAG \
 --set emails.emailcomposer.image.tag=$EMAIL_COMPOSER_TAG \
+--set emails.hostName=$EMAIL_SMTP_HOST \
+--set emails.userName=$EMAIL_SENDER_USER \
+--set emails.Password=$EMAIL_SENDER_PASSWORD \
 $ABTUTOR_WEBWFTL_HELM_URL \
 --version $ABTUTOR_WEBWFTL_HELM_VERSION \
 --wait

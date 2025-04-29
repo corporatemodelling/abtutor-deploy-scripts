@@ -26,3 +26,7 @@ EMAIL_SMTP_PASSWORD_SECRET_KEY=""
 EMAIL_KEYCLOAK_FROM_ADDRESS=noreply@abtutor.com
 EMAIL_KEYCLOAK_DISPLAY_NAME="ABtutor User Authentication Services"
 
+# User and password for emails sent from autorenew etc
+EMAIL_SENDER_USER=senderuser
+EMAIL_SENDER_PASSWORD=senderpassword
+
