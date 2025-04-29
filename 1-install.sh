@@ -91,6 +91,7 @@ abtutor-webwftl \
 --set api.xero.existingSecret.name=$XERO_CLIENT_SECRET_NAME \
 --set api.xero.existingSecret.namespace=$XERO_CLIENT_SECRET_NAMESPACE \
 --set api.xero.existingSecret.key=$XERO_CLIENT_SECRET_KEY \
+--set api.xero.batchInvoiceBrandingTheme=$XERO_BATCHINVOICEBRANDINGTHEME \
 --set auth.oidc.clientId=abtutor-openid-connect \
 --set auth.oidc.configurationUrl="http://${KEYCLOAK_RELEASE_NAME}.${ABTUTOR_K8S_NAMESPACE}.svc.cluster.local${KEYCLOAK_INGRESS_RELATIVE_PATH}realms/ABtutor/.well-known/openid-configuration" \
 --set auth.oidc.clientSecretProviderBaseUri="http://${KEYCLOAK_RELEASE_NAME}-client-secret-provider.${ABTUTOR_K8S_NAMESPACE}.svc.cluster.local" \
