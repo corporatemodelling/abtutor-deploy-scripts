@@ -121,6 +121,7 @@ abtutor-webwftl \
 --set api.renewalxerocheck.image.tag=$API_RENEWALXEROCHECK_TAG \
 --set api.renewallicence.image.tag=$API_RENEWALLICENCE_TAG \
 --set api.renewalsendinvoice.image.tag=$API_RENEWALSENDINVOICE_TAG \
+--set api.permission.image.tag=$API_PERMISSION_TAG \
 --set contentcreation.api.image.tag=$CONTENT_CREATION_API_TAG \
 --set contentcreation.jsonmerge.image.tag=$CONTENT_CREATION_JSON_MERGE_TAG \
 --set emails.templateservice.image.tag=$EMAIL_TEMPLATE_SERVICE_TAG \
